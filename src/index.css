@@ -1,0 +1,57 @@
+/* ✅ Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ✅ Tailwind Layers */
+@import "tailwindcss";
+
+/* ✅ Global Font */
+* {
+  font-family: 'Saira', sans-serif;
+}
+
+/* ✅ Custom Theme Variables */
+:root {
+  /* 🌑 Dark Shades */
+  --color-dark-100: #1a1a1a;
+  --color-dark-200: #222222;
+  --color-dark-300: #2a2a2a;
+  --color-dark-400: #333333;
+
+  /* 💙 Blue Shades */
+  --color-blue-100: #1e3a8a;
+  --color-blue-200: #1d4ed8;
+  --color-blue-300: #3b82f6;
+  --color-blue-400: #60a5fa;
+
+  /* 💜 Purple Shades */
+  --color-purple-100: #4c1d95;
+  --color-purple-200: #6d28d9;
+  --color-purple-300: #8b5cf6;
+  --color-purple-400: #a78bfa;
+
+  /* 💗 Pink Shades */
+  --color-pink-100: #831843;
+  --color-pink-200: #be185d;
+  --color-pink-300: #ec4899;
+  --color-pink-400: #f472b6;
+}
+
+/* ✅ Typewriter Animation */
+.typewriter {
+  overflow: hidden; 
+  border-right: 0.15em solid var(--color-purple-300);
+  white-space: nowrap;
+  width: 0;
+  display: inline-block;
+  animation: typing 3s steps(20, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 15ch }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--color-purple-300); }
+}
